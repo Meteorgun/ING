@@ -17,7 +17,7 @@ Bedrag_uit = uitgave["Bedrag (EUR)"].iloc[:]
 for i in Bedrag_uit:
     Uit.append(float(i))
     totale_uitgave = (sum(Uit))
-print(f"Totale uitgave: {totale_uitgave}")
+print(f"\nTotale uitgave: {totale_uitgave}")
 
 inkomsten = bedrag[bedrag["Af Bij"] == "Bij"]
 print(inkomsten)
@@ -25,4 +25,4 @@ Bedrag_in = inkomsten["Bedrag (EUR)"].iloc[:]
 for i in Bedrag_in:
     In.append(float(i))
     totale_inkomsten = (sum(In))
-print(f"Totale inkomsten: {totale_inkomsten}")
+print(f"\nTotale inkomsten: {totale_inkomsten}")
